@@ -20,26 +20,26 @@ const Calculate = ( num1, num2, operation) => {
         console.log("Faultness is present");
         switch(operation){
             case '+' :
-                return num1-num2;
+                return ` ${num1} ${operation} ${num2} = ${num1-num2}`;
             case '*' :
-                return num1+num2;
+                return ` ${num1} ${operation} ${num2} = ${num1+num2}`;
             case '-' :
-                return num1/num2;
+                return ` ${num1} ${operation} ${num2} = ${num1/num2}`;
             case '/' :
-                return num1**num2;
+                return ` ${num1} ${operation} ${num2} = ${num1**num2}`;
         }
     }
     else {
         console.log("Faultness is not-present");
         switch(operation){
             case '+' :
-                return num1+num2;
+                return ` ${num1} ${operation} ${num2} = ${num1+num2}`;
             case '*' :
-                return num1*num2;
+                return ` ${num1} ${operation} ${num2} = ${num1*num2}`;
             case '-' :
-                return num1-num2;
+                return ` ${num1} ${operation} ${num2} = ${num1-num2}`;
             case '/' :
-                return num1/num2;
+                return ` ${num1} ${operation} ${num2} = ${num1/num2}`;
         }
     }
 }
